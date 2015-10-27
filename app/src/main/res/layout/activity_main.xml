@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_red_dark"
-        android:text="This is Philip's Button!!!"
+        android:text="This is Taylor's Button!!!"
         android:id="@+id/button"
         android:layout_below="@+id/edittext"
         android:layout_toRightOf="@+id/textview"
