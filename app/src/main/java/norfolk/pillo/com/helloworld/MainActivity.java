@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editText =  (EditText) findViewById(R.id.edittext);
-        editText.setHint("This is Taylor.");
+        editText.setHint("hello");
         Button button  = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
     }
-//jjjjjjjjjjjjjjjjjjjjjjjj
+//button is mine, Phil. Right Stephen?
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
