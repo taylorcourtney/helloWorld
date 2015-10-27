@@ -1,19 +1,28 @@
 package norfolk.pillo.com.helloworld;
 
+import android.content.DialogInterface;
+import android.support.v4.app.NotificationCompatSideChannelService;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements  View.OnClickListener {
 
+    EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        EditText editText = (EditText) findViewById(R.id.edittext);
+        editText = (EditText) findViewById(R.id.edittext);
         editText.setHint("This is Taylor.");
+        Button button  = (Button) findViewById(R.id.button);
+        button.setOnClickListener(this);
     }
 
     @Override
@@ -36,5 +45,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+
+    @Override
+    public void onClick(View v)
+    {
+        if(editText.getText().toString().equals(editText.getHint()))
+            Toast.makeText(this, "Good job", Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(this, "Follow the hint you stupid!", Toast.LENGTH_LONG).show();
     }
 }
