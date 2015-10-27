@@ -26,5 +26,5 @@
         android:layout_toRightOf="@+id/textview"
         android:layout_toEndOf="@+id/textview"
         android:layout_marginTop="60dp"
-        />
+        android:visibility="gone" />
 </RelativeLayout>
