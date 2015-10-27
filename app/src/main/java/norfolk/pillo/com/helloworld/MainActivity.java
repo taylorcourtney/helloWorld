@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText = (EditText) findViewById(R.id.edittext);
+        editText =  (EditText) findViewById(R.id.edittext);
         editText.setHint("This is Taylor.");
         Button button  = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
     }
-
+//jjjjjjjjjjjjjjjjjjjjjjjj
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
