@@ -1,10 +1,7 @@
 package norfolk.pillo.com.helloworld;
 
-import android.content.DialogInterface;
-import android.support.v4.app.NotificationCompatSideChannelService;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,8 +50,10 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
     public void onClick(View v)
     {
         if(editText.getText().toString().equals(editText.getHint()))
-            Toast.makeText(this, "Good job", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Good job", Toast.LENGTH_SHORT).show();
         else
-            Toast.makeText(this, "Follow the hint you stupid!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Follow the hint you stupid!", Toast.LENGTH_SHORT).show();
     }
 }
+
+///Hi Phil
